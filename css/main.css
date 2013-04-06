@@ -1,0 +1,188 @@
+
+/* Global reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+*****************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ============================ */
+body{
+    color: white;
+    background: black;
+
+}
+
+#content {
+    z-index: 4;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    background: black;
+    left: 50%; /* align left edge with center of viewport */
+    margin-left: -470px; /* move left by half element's width */
+    }
+    #content article {
+        text-align: center;
+        width: 940px;
+        }
+        #page-number-1,
+        #page-number-2,
+        #page-number-3,
+        #page-number-4 {
+            padding-top: 105px;
+            }
+        #page-number-1 {
+            position: absolute;
+            top: 0px;
+            }
+        #page-number-2 {
+            position: absolute;
+            top: 1150px;
+            }
+        #page-number-3 {
+            position: absolute;
+            top: 1500px;
+            }
+            #content h1 {
+
+                }
+        #page-number-4 {
+            position: absolute;
+            top: 2270px;
+            }
+/* midground images */
+#midground{
+    z-index: 2;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    margin-left: -600px; /* move left by half element's width */
+    }
+    #blimp1_green {
+        position: absolute;
+        top: 100px;
+        left: 77%;
+        }
+    #blimp2_green {
+        position: absolute;
+        top: 800px;
+        left: 4%;
+        }
+    #canoe_green {
+        position: absolute;
+        top: 543px;
+        left: 69%;
+        }
+    #bike_green {
+        position: absolute;
+        top:  450px;
+        left: -4%;
+        }
+    #tardis {
+        position: absolute;
+        top: 1180px;
+        left: 38%;
+    }
+/* background images */
+#background {
+    z-index: 1;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    margin-left: -600px; /* move left by half element's width */
+    }
+    #blimp1 {
+        position: absolute;
+        top: 85px;
+        }
+
+nav#primary {
+    z-index: 5;
+    position: fixed;
+    top: 50%;
+    right: 100px;
+    margin-top: -40px;
+}
+nav#primary li {
+    position: relative;
+    height: 20px;
+}
+nav#primary a {
+    display: block;
+}
+nav#primary a:hover, nav#primary a.active {
+}
+nav#primary h1 {
+    position: absolute;
+    right: 22px;
+    top: -7px;
+    display: none;
+    padding: 4px 20px 4px 7px;;
+    color: #fff;
+    white-space: nowrap;
+    }
+nav.next-prev {
+    margin: 20px 0 0 0;
+    }
+    a.prev,
+    a.next {
+        display: block;
+        width: 15px;
+        height: 11px;
+        text-indent: -9999px;
+        }
+    a.prev {
+        margin: 0 auto 5px auto;
+        }
+        a.prev:hover {
+            }
+    a.next {
+        margin: 5px auto 0 auto;
+        }
+        a.next:hover {
+            }
+
